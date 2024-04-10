@@ -10,30 +10,34 @@
 
 <body>
     <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
+        <h1 class="title">Shoe Collection</h1>
     </header>
+    <div class="dropdown">
+        <button class="dropButton">Sort by Brand</button>
+        <div class="dropdownCat">
+            <button onclick="sortByNike();">Nike</button>
+            <button onclick="sortByJordan();">Jordan</button>
+            <button onclick="sortByNB();">New Balance</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropButton">Filter if Collab</button>
+        <div class="dropdownCat">
+            <button onclick="sortByCollab();">Collab</button>
+            <button onclick="sortByNotCollab();">Not Collab</button>
+        </div>
+    </div>
     <div id="card-container">
         
     </div>
     <div class="card" style="display: none;">
         <div class="card-content">
             <h2>TV Show Title</h2>
-            <img src="" alt="TV Show Poster">
-            <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
+            <img src="" alt="Shoe Picture">
+            
         </div>
     </div>
-    <div class="footer">
-        <button onclick="quoteAlert();">
-            Get A Quote!
-        </button>
-        <button onclick="removeLastCard();">
-            Remove A Card!
-        </button>
-    </div>
+    
 </body>
 
 </html>
